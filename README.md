@@ -26,15 +26,16 @@ LeCaRD-Elem
 
 ### querys.json
 `querys.json` contains the follwing fields:
-<pre style="white-space: pre-wrap;"><code class="language-python">
-{
-    "path": "the path field copied from the original LeCaRD dataset",
-    "ridx": "the query id for each case",
-    "q": "the detailed case decription whose content is split into sentences. the key-value pair of this field denotes sentence index and its corresponding content, respectively",
-    "crime": "the crime list provided in the original LeCaRD dataset",
-    "element": "the annotated elements for this case. `ajjbqk_reference` field under each element denotes the sentence indexes to support this element"
-}
-</code></pre>
+
+> `"path"`: the path field copied from the original LeCaRD dataset.
+>
+> `"ridx"`: the query id for each case.
+>
+> `"q"`: the detailed case decription whose content is split into sentences. the key-value pair of this field denotes sentence index and its corresponding content, respectively.
+>
+> `"crime"`: the crime list provided in the original LeCaRD dataset.
+>
+> `"element"`: the annotated elements for this case. `ajjbqk_reference` field under each element denotes the sentence indexes to support this element.
 
 
 ### candidates.json
