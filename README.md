@@ -1,5 +1,6 @@
-# An Element is Worth a Thousand Words: Enhancing Legal Case Retrieval by Incorporating Legal Elements[<a href="[https://arxiv.org/abs/2406.19760](https://aclanthology.org/2024.findings-acl.139/">Paper</a>]
-
+<div align="center">
+<h1>An Element is Worth a Thousand Words: Enhancing Legal Case Retrieval by Incorporating Legal Elements[<a href="https://aclanthology.org/2024.findings-acl.139/">Paper</a>]</h1>
+</div>
 
 ## Released Resources
 The LeCaRD-Elem dataset can be downloaded via:
