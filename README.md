@@ -26,7 +26,7 @@ LeCaRD-Elem
 
 ### querys.json
 `querys.json` contains the follwing fields:
-```python
+<pre style="white-space: pre-wrap;"><code class="language-python">
 {
     "path": "the path field copied from the original LeCaRD dataset",
     "ridx": "the query id for each case",
@@ -34,7 +34,8 @@ LeCaRD-Elem
     "crime": "the crime list provided in the original LeCaRD dataset",
     "element": "the annotated elements for this case. `ajjbqk_reference` field under each element denotes the sentence indexes to support this element"
 }
-```
+</code></pre>
+
 
 ### candidates.json
 
