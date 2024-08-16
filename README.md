@@ -13,10 +13,28 @@ unzip LeCaRD-Elem.zip
 ```
 
 ## Data Structure
+The data structure in the above link is presented as:
+```
+LeCaRD-Elem
+├── candidates.json     # the annotated candidate cases
+├── label_system.xlsx   # the element label taxonomy of our LeCaRD-Elem
+└── querys.json         # the annotated query cases
+```
+`querys.json` contains 107 query cases, while `candidates.json` contains 9088 candidate cases. You can load them in Python using `json.load()` function.
 
 ## Usage
 
 ### querys.json
+`querys.json` contains the follwing fields:
+```python
+{
+    "path": "the path field copied from the original LeCaRD dataset",
+    "ridx": "the query id for each case",
+    "q": "the detailed case decription whose content is split into sentences. the key-value pair of this field denotes sentence index and its corresponding content, respectively",
+    "crime": "the crime list provided in the original LeCaRD dataset",
+    "element": "the annotated elements for this case. `ajjbqk_reference` field under each element denotes the sentence indexes to support this element"
+}
+```
 
 ### candidates.json
 
