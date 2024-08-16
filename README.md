@@ -27,20 +27,32 @@ LeCaRD-Elem
 ### querys.json
 `querys.json` contains the follwing fields:
 
-> `"path"`: the path field copied from the original LeCaRD dataset.
+> `"path"`: The path field copied from the original LeCaRD dataset.
 >
-> `"ridx"`: the query id for each case.
+> `"ridx"`: The query id for each case.
 >
-> `"q"`: the detailed case decription whose content is split into sentences. the key-value pair of this field denotes sentence index and its corresponding content, respectively.
+> `"q"`: The detailed case decription whose content is split into sentences. the key-value pair of this field denotes sentence index and its corresponding content, respectively.
 >
-> `"crime"`: the crime list provided in the original LeCaRD dataset.
+> `"crime"`: The crime list provided in the original LeCaRD dataset.
 >
-> `"element"`: the annotated elements for this case. `ajjbqk_reference` field under each element denotes the sentence indexes to support this element.
-
+> `"elements"`: The annotated elements for this case. `ajjbqk_reference` field under each element denotes the sentence indexes to support this element.
 
 ### candidates.json
+`candidates.json` contains the following fields:
+
+> `"ajjbqk_sentences"`: Similar to `"q"` in `querys.json`. It gives the detailed fact of this case.
+>
+> `"ajjbqk_suggested_sentences"`: Sentence index range of key fact in this case. It is only used to be referenced, and may not be the oracle labels for each case.
+>
+> `"cpfxgc"`: Copied from the original LeCaRD dataset.
+>
+> `"elements"`: Similar to `elements` in `querys.json`.
+
+The keys of this file are unique candidate case ids.
+
 
 ### label_system.xlsx
+We provide the detailed element taxonomy in this file, which includes all the elements presented in LeCaRD-Elem dataset.
 
 ## Citation
 ```
